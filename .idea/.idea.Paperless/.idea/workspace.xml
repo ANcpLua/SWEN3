@@ -15,7 +15,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7d0a8b3-79e1-4f84-a82a-6a75bb26818f" name="Changes" comment="" />
+    <list default="true" id="d7d0a8b3-79e1-4f84-a82a-6a75bb26818f" name="Changes" comment="new sln name">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Paperless/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Paperless/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperlessREST/bin/Debug/net8.0/PostgreSQL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PaperlessREST/bin/Debug/net8.0/PostgreSQL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperlessREST/obj/Debug/net8.0/PaperlessREST.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PaperlessREST/obj/Debug/net8.0/PaperlessREST.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperlessREST/obj/Debug/net8.0/PaperlessREST.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PaperlessREST/obj/Debug/net8.0/PaperlessREST.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperlessREST/obj/Debug/net8.0/PaperlessREST.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PaperlessREST/obj/Debug/net8.0/PaperlessREST.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperlessREST/obj/Debug/net8.0/PaperlessREST.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PaperlessREST/obj/Debug/net8.0/PaperlessREST.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperlessREST/obj/Debug/net8.0/PaperlessREST.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PaperlessREST/obj/Debug/net8.0/PaperlessREST.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperlessREST/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/PaperlessREST/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperlessREST/obj/Debug/net8.0/refint/PaperlessREST.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PaperlessREST/obj/Debug/net8.0/refint/PaperlessREST.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperlessREST/obj/PaperlessREST.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/PaperlessREST/obj/PaperlessREST.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperlessREST/obj/PaperlessREST.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/PaperlessREST/obj/PaperlessREST.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperlessREST/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PaperlessREST/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaperlessREST/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/PaperlessREST/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostgreSQL/bin/Debug/net8.0/PostgreSQL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PostgreSQL/bin/Debug/net8.0/PostgreSQL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostgreSQL/bin/Debug/net8.0/PostgreSQL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PostgreSQL/bin/Debug/net8.0/PostgreSQL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostgreSQL/obj/Debug/net8.0/PostgreSQL.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PostgreSQL/obj/Debug/net8.0/PostgreSQL.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostgreSQL/obj/Debug/net8.0/PostgreSQL.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PostgreSQL/obj/Debug/net8.0/PostgreSQL.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostgreSQL/obj/Debug/net8.0/PostgreSQL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PostgreSQL/obj/Debug/net8.0/PostgreSQL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostgreSQL/obj/Debug/net8.0/PostgreSQL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PostgreSQL/obj/Debug/net8.0/PostgreSQL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostgreSQL/obj/Debug/net8.0/ref/PostgreSQL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PostgreSQL/obj/Debug/net8.0/ref/PostgreSQL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostgreSQL/obj/Debug/net8.0/refint/PostgreSQL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PostgreSQL/obj/Debug/net8.0/refint/PostgreSQL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostgreSQL/obj/PostgreSQL.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/PostgreSQL/obj/PostgreSQL.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostgreSQL/obj/PostgreSQL.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/PostgreSQL/obj/PostgreSQL.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostgreSQL/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PostgreSQL/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostgreSQL/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/PostgreSQL/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/obj/Debug/net8.0/Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/obj/Debug/net8.0/Tests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/obj/Debug/net8.0/Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/obj/Debug/net8.0/Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/obj/Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/obj/Tests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/obj/Tests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/obj/Tests.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,6 +127,7 @@
     "JavaScript Debug.upload.html (1).executor": "Run",
     "JavaScript Debug.upload.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
@@ -111,7 +144,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.PaperlessREST">
+  <component name="RunManager" selected="Docker.compose.yaml: Compose Deployment">
     <configuration name="documents.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="https://localhost:8081/documents.html">
       <method v="2" />
     </configuration>
@@ -242,6 +275,15 @@
       <workItem from="1731702723550" duration="2516000" />
       <workItem from="1732035239768" duration="15855000" />
     </task>
+    <task id="LOCAL-00001" summary="new sln name">
+      <option name="closed" value="true" />
+      <created>1732121192501</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732121192501</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,5 +291,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="new sln name" />
+    <option name="LAST_COMMIT_MESSAGE" value="new sln name" />
   </component>
 </project>

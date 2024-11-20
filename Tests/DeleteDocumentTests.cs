@@ -45,7 +45,7 @@ public class DeleteDocumentServiceTests
     }
 
     [Test]
-    public async Task Delete_NonExistingDocument_DoesNotThrow()
+    public Task Delete_NonExistingDocument_DoesNotThrow()
     {
         // Arrange
         _mockRepo.Setup(r => r.GetByIdAsync(It.IsAny<int>(), It.IsAny<CancellationToken>()))
@@ -53,5 +53,6 @@ public class DeleteDocumentServiceTests
 
         // Act & Assert
         Assert.DoesNotThrowAsync(() => _service.DeleteAsync(999));
+        return Task.CompletedTask;
     }
 }
