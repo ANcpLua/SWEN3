@@ -37,7 +37,8 @@ public class UploadController : ControllerBase
             }
 
             var document = await _uploadService.Upload(uploadDto, cancellationToken);
-            return CreatedAtAction(nameof(GetDocumentController.GetById), "GetDocument", new { id = document.Id }, document);
+            return CreatedAtAction(nameof(DocumentsController.GetById), "Documents", new { id = document.Id },
+                document);
         }
         catch (OperationCanceledException)
         {

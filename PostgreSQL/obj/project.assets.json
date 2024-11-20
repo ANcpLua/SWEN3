@@ -2155,11 +2155,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anfh2\\Documents\\GitHub\\SWEN3\\PostgreSQL\\PostgreSQL.csproj",
+      "projectUniqueName": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj",
       "projectName": "PostgreSQL",
-      "projectPath": "C:\\Users\\anfh2\\Documents\\GitHub\\SWEN3\\PostgreSQL\\PostgreSQL.csproj",
+      "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj",
       "packagesPath": "C:\\Users\\anfh2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anfh2\\Documents\\GitHub\\SWEN3\\PostgreSQL\\obj\\",
+      "outputPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\obj\\",
       "projectStyle": "PackageReference",
       "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [

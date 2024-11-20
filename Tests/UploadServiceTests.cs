@@ -33,9 +33,9 @@ public class UploadServiceTests
 
         _service = new UploadService(
             _mockRepo.Object,
-            _validator,
             _mapper,
-            _mockLogger.Object);
+            _validator,
+            _mockLogger.Object);    
     }
 
     [Test]
@@ -49,7 +49,7 @@ public class UploadServiceTests
             File = formFile
         };
 
-        _mockRepo.Setup(r => r.Upload(It.IsAny<PostgreSQL.Entities.Document>(), It.IsAny<CancellationToken>()))
+        _mockRepo.Setup(r => r.UploadAsync(It.IsAny<PostgreSQL.Entities.Document>(), It.IsAny<CancellationToken>()))
                  .ReturnsAsync((PostgreSQL.Entities.Document doc, CancellationToken _) => new PostgreSQL.Entities.Document
                  {
                      Id = 1,
@@ -59,12 +59,12 @@ public class UploadServiceTests
                  });
 
         // Act
-        var result = await _service.Upload(uploadDto);
+        var result = await _service.Upload(uploadDto, default);
 
         // Assert
         Assert.That(result, Is.Not.Null);
         Assert.That(result.Name, Is.EqualTo("test.pdf"));
-        _mockRepo.Verify(r => r.Upload(It.IsAny<PostgreSQL.Entities.Document>(), It.IsAny<CancellationToken>()), Times.Once);
+        _mockRepo.Verify(r => r.UploadAsync(It.IsAny<PostgreSQL.Entities.Document>(), It.IsAny<CancellationToken>()), Times.Once);
     }
 
     [Test]
@@ -77,7 +77,7 @@ public class UploadServiceTests
         };
 
         // Act & Assert
-        var ex = Assert.ThrowsAsync<ValidationException>(() => _service.Upload(uploadDto));
+        var ex = Assert.ThrowsAsync<ValidationException>(() => _service.Upload(uploadDto, default));
         Assert.That(ex.Message, Is.EqualTo("Validation failed: \r\n -- Name: 'Name' darf nicht leer sein. Severity: Error"));
         return Task.CompletedTask;
     }

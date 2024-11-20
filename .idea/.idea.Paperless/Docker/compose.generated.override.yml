@@ -1,9 +1,8 @@
 # This is a generated file. Not intended for manual editing.
-version: "3.9"
 services:
   paperlessrest:
     build:
-      context: "C:\\Users\\anfh2\\Desktop\\Paperless\\Paperless\\Paperless"
+      context: "C:\\Users\\anfh2\\RiderProjects\\SWEN3"
       dockerfile: "PaperlessREST/Dockerfile"
       target: "build"
     command: []
@@ -15,7 +14,7 @@ services:
     image: "paperlessrest:dev"
     ports: []
     volumes:
-    - "C:\\Users\\anfh2\\Desktop\\Paperless\\Paperless\\Paperless\\PaperlessREST:/app:rw"
-    - "C:\\Users\\anfh2\\Desktop\\Paperless\\Paperless\\Paperless:/src:rw"
+    - "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST:/app:rw"
+    - "C:\\Users\\anfh2\\RiderProjects\\SWEN3:/src:rw"
     - "C:\\Users\\anfh2\\.nuget\\packages:/root/.nuget/packages"
     working_dir: "/app"

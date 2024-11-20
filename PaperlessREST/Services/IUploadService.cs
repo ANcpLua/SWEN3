@@ -1,8 +1,9 @@
 using PaperlessREST.Models;
 
-namespace PaperlessREST.Services;
-
-public interface IUploadService
+namespace PaperlessREST.Services
 {
-    Task<DocumentDto> Upload(DocumentUploadDto document, CancellationToken cancellationToken = default);
+    public interface IUploadService
+    {
+        Task<DocumentDto> Upload(DocumentUploadDto uploadDto, CancellationToken cancellationToken);
+    }
 }

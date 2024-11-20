@@ -2715,11 +2715,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anfh2\\Documents\\GitHub\\SWEN3\\PaperlessREST\\PaperlessREST.csproj",
+      "projectUniqueName": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST\\PaperlessREST.csproj",
       "projectName": "PaperlessREST",
-      "projectPath": "C:\\Users\\anfh2\\Documents\\GitHub\\SWEN3\\PaperlessREST\\PaperlessREST.csproj",
+      "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST\\PaperlessREST.csproj",
       "packagesPath": "C:\\Users\\anfh2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anfh2\\Documents\\GitHub\\SWEN3\\PaperlessREST\\obj\\",
+      "outputPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST\\obj\\",
       "projectStyle": "PackageReference",
       "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [
@@ -2741,8 +2741,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\anfh2\\Documents\\GitHub\\SWEN3\\PostgreSQL\\PostgreSQL.csproj": {
-              "projectPath": "C:\\Users\\anfh2\\Documents\\GitHub\\SWEN3\\PostgreSQL\\PostgreSQL.csproj"
+            "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj": {
+              "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj"
             }
           }
         }

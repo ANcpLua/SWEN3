@@ -27,7 +27,10 @@ public class GetDocumentServiceTests
         });
         _mapper = mapperConfig.CreateMapper();
            
-        _serviceTests = new GetDocumentService(_mockRepo.Object, _mapper, _mockLogger.Object);
+        _serviceTests = new GetDocumentService(
+            _mockRepo.Object,
+            _mapper,
+            _mockLogger.Object);
             
     }
 
@@ -48,7 +51,7 @@ public class GetDocumentServiceTests
                  .ReturnsAsync(document);
 
         // Act
-        var result = await _serviceTests.GetByIdAsync(documentId);
+        var result = await _serviceTests.GetByIdAsync(documentId, CancellationToken.None);
 
         // Assert
         Assert.That(result, Is.Not.Null);
@@ -63,7 +66,7 @@ public class GetDocumentServiceTests
                  .ReturnsAsync((PostgreSQL.Entities.Document?)null);
 
         // Act
-        var result = await _serviceTests.GetByIdAsync(999);
+        var result = await _serviceTests.GetByIdAsync(999, CancellationToken.None);
 
         // Assert
         Assert.That(result, Is.Null);

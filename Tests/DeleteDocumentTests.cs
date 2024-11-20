@@ -22,7 +22,7 @@ public class DeleteDocumentServiceTests
             _mockRepo.Object,
             _mockLogger.Object);
     }
-
+    
     [Test]
     public async Task Delete_ExistingDocument_DeletesSuccessfully()
     {
@@ -38,21 +38,21 @@ public class DeleteDocumentServiceTests
                  .ReturnsAsync(document);
 
         // Act
-        await _service.DeleteAsync(documentId);
+        await _service.DeleteAsync(documentId, default);
 
         // Assert 
         _mockRepo.Verify(r => r.DeleteAsync(documentId, It.IsAny<CancellationToken>()), Times.Once);
     }
 
     [Test]
-    public Task Delete_NonExistingDocument_DoesNotThrow()
+    public void Delete_NonExistentDocument_ThrowsKeyNotFoundException()
     {
         // Arrange
-        _mockRepo.Setup(r => r.GetByIdAsync(It.IsAny<int>(), It.IsAny<CancellationToken>()))
+        var documentId = 1;
+        _mockRepo.Setup(r => r.GetByIdAsync(documentId, It.IsAny<CancellationToken>()))
                  .ReturnsAsync((PostgreSQL.Entities.Document?)null);
 
         // Act & Assert
-        Assert.DoesNotThrowAsync(() => _service.DeleteAsync(999));
-        return Task.CompletedTask;
+        Assert.ThrowsAsync<KeyNotFoundException>(() => _service.DeleteAsync(documentId, default));
     }
 }
