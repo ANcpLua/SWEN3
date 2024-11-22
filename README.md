@@ -26,8 +26,7 @@
 - Docker working
 
 ### Sprint 4: Message Broker
-- RabbitMQ (RabbitMQ.Client)
-- MassTransit (MassTransit, MassTransit.RabbitMQ)
+- RabbitMQ using EasyNetQ version 7.8(7) https://github.com/EasyNetQ/EasyNetQ/wiki/Quick-Start
 
 ### Sprint 5: Worker Services
 - Hangfire (Hangfire.AspNetCore)
@@ -44,27 +43,8 @@ The best way to avoid failure is to fail constantly
 - Exception Handling: Global exception middleware
 - Validation: FluentValidation 
 - Mapping: AutoMapper 
-- Dependency Injection: Autofac
+- Dependency Injection: Microsoft
 
 ## Key Use Cases
 1. Upload document
 2. Search for a document
-
-## Getting Started (Sprint 1)
-1. Clone the repository
-2. Navigate to the project directory
-3. Run `docker-compose up --build`
-4. Access the API at `http://localhost:8081`
-5. Swagger documentation: `http://localhost:8081/swagger`
-
-## API Endpoints (Sprint 1)
-http://localhost:8081/swagger
-- GET /documents
-- GET /documents/{id}
-- POST /documents
-- PUT /documents/{id}
-- DELETE /documents/{id}
-- GET /documents/search (placeholder for future implementation)
-
-## Sprint 2: Web-UI Integration (Sprint 2) 
-Blazor WebAssembly hardcoded endpoint to api controller (Microsoft.AspNetCore.Components.WebAssembly)
