@@ -1,6 +1,7 @@
 using AutoMapper;
 using FluentValidation;
 using PaperlessREST.DomainModel;
+using PaperlessREST.DTOModels;
 using PaperlessREST.Models;
 using PostgreSQL.Persistence;
 
@@ -26,28 +27,60 @@ public class UploadService : IUploadService
     }
 
     public async Task<DocumentDto> Upload(DocumentUploadDto uploadDto, CancellationToken cancellationToken = default)
+{
+    // Step 1: Map UploadDto to Domain Model
+    var document = _mapper.Map<Document>(uploadDto);
+    document.DateUploaded = DateTime.UtcNow;
+
+    // Step 2: Generate and Assign File Path
+    var uploadsPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+    if (!Directory.Exists(uploadsPath))
     {
-        var document = _mapper.Map<Document>(uploadDto);
-            
-        document.FilePath = Path.Combine("uploads", $"{Guid.NewGuid()}{Path.GetExtension(uploadDto.File.FileName)}");
-        document.DateUploaded = DateTime.UtcNow;
+        Directory.CreateDirectory(uploadsPath);
+    }
 
-        var validationResult = await _validator.ValidateAsync(document, cancellationToken);
-        if (!validationResult.IsValid)
-        {
-            throw new ValidationException(validationResult.Errors);
-        }
+    var uniqueFileName = $"{Guid.NewGuid()}_{Path.GetFileName(uploadDto.File.FileName)}";
+    var filePath = Path.Combine(uploadsPath, uniqueFileName);
+    document.FilePath = filePath; // Assign the generated file path to the document before validation
 
-        Directory.CreateDirectory("uploads");
-        using (var stream = new FileStream(document.FilePath, FileMode.Create))
+    // Step 3: Validate Document Entity
+    var validationResult = await _validator.ValidateAsync(document, cancellationToken);
+    if (!validationResult.IsValid)
+    {
+        _logger.LogWarning("Document validation failed: {Errors}", validationResult.Errors);
+        throw new ValidationException(validationResult.Errors);
+    }
+
+    // Step 4: Save File to Disk
+    try
+    {
+        using (var stream = new FileStream(filePath, FileMode.Create))
         {
             await uploadDto.File.CopyToAsync(stream, cancellationToken);
         }
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex, "An error occurred while saving the uploaded file");
+        throw;
+    }
 
-        var entityDocument = _mapper.Map<PostgreSQL.Entities.Document>(document);
+    // Step 5: Persist Document Data to Database
+    var entityDocument = _mapper.Map<PostgreSQL.Entities.Document>(document);
+    try
+    {
         var uploadedEntityDocument = await _repository.Upload(entityDocument, cancellationToken);
         var uploadedDocument = _mapper.Map<Document>(uploadedEntityDocument);
-            
+
+        _logger.LogInformation($"Document with ID {uploadedDocument.Id} uploaded successfully");
+
+        // Step 6: Map to DTO and Return
         return _mapper.Map<DocumentDto>(uploadedDocument);
     }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex, "An error occurred while saving the document entity to the database");
+        throw;
+    }
+}
 }

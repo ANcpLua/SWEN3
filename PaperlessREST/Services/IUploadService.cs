@@ -1,3 +1,4 @@
+using PaperlessREST.DTOModels;
 using PaperlessREST.Models;
 
 namespace PaperlessREST.Services;

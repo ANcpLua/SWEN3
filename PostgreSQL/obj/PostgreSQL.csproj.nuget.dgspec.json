@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anfh2\\Documents\\GitHub\\SWEN3\\PostgreSQL\\PostgreSQL.csproj": {}
+    "C:\\Users\\steff\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anfh2\\Documents\\GitHub\\SWEN3\\PostgreSQL\\PostgreSQL.csproj": {
+    "C:\\Users\\steff\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anfh2\\Documents\\GitHub\\SWEN3\\PostgreSQL\\PostgreSQL.csproj",
+        "projectUniqueName": "C:\\Users\\steff\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj",
         "projectName": "PostgreSQL",
-        "projectPath": "C:\\Users\\anfh2\\Documents\\GitHub\\SWEN3\\PostgreSQL\\PostgreSQL.csproj",
-        "packagesPath": "C:\\Users\\anfh2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anfh2\\Documents\\GitHub\\SWEN3\\PostgreSQL\\obj\\",
+        "projectPath": "C:\\Users\\steff\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj",
+        "packagesPath": "C:\\Users\\steff\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\steff\\RiderProjects\\SWEN3\\PostgreSQL\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\anfh2\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\steff\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,11 +35,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -65,6 +56,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.10, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",

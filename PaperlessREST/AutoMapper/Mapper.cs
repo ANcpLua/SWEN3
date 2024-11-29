@@ -1,5 +1,6 @@
 using AutoMapper;
 using PaperlessREST.DomainModel;
+using PaperlessREST.DTOModels;
 using PaperlessREST.Models;
 
 namespace PaperlessREST.AutoMapper;

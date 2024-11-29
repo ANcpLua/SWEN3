@@ -1,47 +1,114 @@
-﻿version: '3.9'
-
-services:
+﻿services:
   paperlessrest:
-    container_name: paperlessrest  
-    image: paperlessrest:latest  
+    container_name: paperlessrest
+    image: paperlessrest:latest
     build:
       context: .
       dockerfile: PaperlessREST/Dockerfile
       args:
-        BUILD_CONFIGURATION: Release  
+        BUILD_CONFIGURATION: Release
     ports:
-      - "8081:8081"  
+      - "8081:8081"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ConnectionStrings__DefaultConnection=Host=postgresdb;Port=5432;Database=PaperlessDB;Username=postgres;Password=postgres
-      - ASPNETCORE_URLS=https://+:8081
-      - ASPNETCORE_Kestrel__Endpoints__Https__Url=https://+:8081
-      - ASPNETCORE_Kestrel__Endpoints__Https__Certificate__Path=/app/certs/aspnetapp.pfx
-      - ASPNETCORE_Kestrel__Endpoints__Https__Certificate__Password=MySecurePassword123!
+      - ASPNETCORE_URLS=http://+:8081
+      - UPLOAD_DIRECTORY=/app/wwwroot/uploads
     volumes:
-      - ./PaperlessREST/certs:/app/certs  
+      - uploaded-files:/app/wwwroot/uploads
     depends_on:
-      - postgresdb
+      postgresdb:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_started
     networks:
       - app-network
+    restart: unless-stopped
+
+  publisher:
+    container_name: publisher
+    image: publisher:latest
+    build:
+      context: .
+      dockerfile: Publisher/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Release
+    depends_on:
+      rabbitmq:
+        condition: service_started
+    networks:
+      - app-network
+    environment:
+      - RabbitMQ__Host=rabbitmq
+      - RabbitMQ__Port=5672
+      - RabbitMQ__Username=guest
+      - RabbitMQ__Password=guest
+    restart: unless-stopped
+
+  subscriber:
+    container_name: subscriber
+    image: subscriber:latest
+    build:
+      context: .
+      dockerfile: Subscriber/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Release
+    depends_on:
+      rabbitmq:
+        condition: service_started
+    networks:
+      - app-network
+    environment:
+      - RabbitMQ__Host=rabbitmq
+      - RabbitMQ__Port=5672
+      - RabbitMQ__Username=guest
+      - RabbitMQ__Password=guest
+    restart: unless-stopped
+
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    networks:
+      - app-network
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
 
   postgresdb:
-    container_name: postgresdb  
+    container_name: postgresdb
     image: postgres:15-alpine
     environment:
       - POSTGRES_DB=PaperlessDB
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     ports:
-      - "5434:5432"  
+      - "5434:5432"
     volumes:
       - db-data:/var/lib/postgresql/data
     networks:
       - app-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d PaperlessDB"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     restart: unless-stopped
 
 volumes:
   db-data:
+  rabbitmq-data:
+  uploaded-files:
 
 networks:
   app-network:

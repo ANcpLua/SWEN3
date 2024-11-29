@@ -1,5 +1,6 @@
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
+using PaperlessREST.DTOModels;
 using PaperlessREST.Models;
 using PaperlessREST.Services;
 

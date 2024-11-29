@@ -1,9 +1,8 @@
 # This is a generated file. Not intended for manual editing.
-version: "3.9"
 services:
   paperlessrest:
     build:
-      context: "C:\\Users\\anfh2\\Desktop\\Paperless\\Paperless\\Paperless"
+      context: "C:\\Users\\steff\\RiderProjects\\SWEN3"
       dockerfile: "PaperlessREST/Dockerfile"
       target: "build"
     command: []
@@ -12,10 +11,49 @@ services:
     - "/app/bin/Debug/net8.0/PaperlessREST.dll"
     environment:
       ASPNETCORE_STATICWEBASSETS: "/app/bin/Debug/net8.0/PaperlessREST.staticwebassets.runtime.CT.json"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
     image: "paperlessrest:dev"
     ports: []
     volumes:
-    - "C:\\Users\\anfh2\\Desktop\\Paperless\\Paperless\\Paperless\\PaperlessREST:/app:rw"
-    - "C:\\Users\\anfh2\\Desktop\\Paperless\\Paperless\\Paperless:/src:rw"
-    - "C:\\Users\\anfh2\\.nuget\\packages:/root/.nuget/packages"
+    - "C:\\Users\\steff\\.nuget\\packages:/root/.nuget/packages"
+    - "C:\\Users\\steff\\RiderProjects\\SWEN3\\PaperlessREST:/app:rw"
+    - "C:\\Users\\steff\\RiderProjects\\SWEN3:/src:rw"
+    working_dir: "/app"
+  publisher:
+    build:
+      context: "C:\\Users\\steff\\RiderProjects\\SWEN3"
+      dockerfile: "Publisher/Dockerfile"
+      target: "build"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Publisher.dll"
+    environment:
+      DOTNET_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "publisher:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\steff\\.nuget\\packages:/root/.nuget/packages"
+    - "C:\\Users\\steff\\RiderProjects\\SWEN3\\Publisher:/app:rw"
+    - "C:\\Users\\steff\\RiderProjects\\SWEN3:/src:rw"
+    working_dir: "/app"
+  subscriber:
+    build:
+      context: "C:\\Users\\steff\\RiderProjects\\SWEN3"
+      dockerfile: "Subscriber/Dockerfile"
+      target: "build"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Subscriber.dll"
+    environment:
+      DOTNET_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "subscriber:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\steff\\.nuget\\packages:/root/.nuget/packages"
+    - "C:\\Users\\steff\\RiderProjects\\SWEN3\\Subscriber:/app:rw"
+    - "C:\\Users\\steff\\RiderProjects\\SWEN3:/src:rw"
     working_dir: "/app"
