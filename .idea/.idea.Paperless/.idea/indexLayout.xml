@@ -3,7 +3,11 @@
   <component name="UserContentModel">
     <attachedFolders />
     <explicitIncludes>
+      <Path>.env</Path>
+      <Path>appsettings.test.json</Path>
       <Path>certs</Path>
+      <Path>global.json</Path>
+      <Path>rabbitmq-config</Path>
     </explicitIncludes>
     <explicitExcludes />
   </component>

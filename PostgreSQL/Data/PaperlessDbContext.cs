@@ -1,11 +1,11 @@
-using PostgreSQL.Entities;
 using Microsoft.EntityFrameworkCore;
+using PostgreSQL.Entities;
 
 namespace PostgreSQL.Data;
 
 public class PaperlessDbContext : DbContext
 {
-    public PaperlessDbContext(DbContextOptions<PaperlessDbContext> options) 
+    public PaperlessDbContext(DbContextOptions<PaperlessDbContext> options)
         : base(options)
     {
     }
@@ -21,20 +21,20 @@ public class PaperlessDbContext : DbContext
             entity.ToTable("Documents");
 
             entity.Property(e => e.Id)
-                  .HasColumnName("Id")
-                  .IsRequired();
+                .HasColumnName("Id")
+                .IsRequired();
 
             entity.Property(e => e.Name)
-                  .HasColumnName("Name")
-                  .IsRequired();
+                .HasColumnName("Name")
+                .IsRequired();
 
             entity.Property(e => e.DateUploaded)
-                  .HasColumnName("DateUploaded")
-                  .IsRequired();
+                .HasColumnName("DateUploaded")
+                .IsRequired();
 
             entity.Property(e => e.FilePath)
-                  .HasColumnName("FilePath")
-                  .IsRequired();
+                .HasColumnName("FilePath")
+                .IsRequired();
         });
 
         base.OnModelCreating(modelBuilder);

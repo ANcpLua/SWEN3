@@ -1,0 +1,112 @@
+﻿services:
+  paperlessrest:
+    build:
+      context: .
+      dockerfile: ./PaperlessREST/Dockerfile
+    environment:
+      POSTGRES_HOST: "localhost"
+      POSTGRES_DB: "PaperlessDB"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+      RABBITMQ_HOST: "rabbitmq"
+      RABBITMQ_PORT: "5672"
+      RABBITMQ_USER: "guest"
+      RABBITMQ_PASSWORD: "guest"
+      MINIO_ENDPOINT: "172.18.0.3"
+      MINIO_ACCESS_KEY: "CzXb5FikRyJLMA3HUgH3"
+      MINIO_SECRET_KEY: "HsBiPjb2P0n9KrjvBSYO6zm9OxHX36t2upyTPg9j"
+      CERTIFICATE_PATH: "PaperlessREST/certs/aspnetapp.pfx"
+      CERTIFICATE_PASSWORD: "MySecurePassword123!"
+      UPLOAD_PATH: "app/wwwroot/uploads"
+      TESSDATA_PREFIX: "/app/tessdata"
+      ELASTICSEARCH_HOST: "http://elasticsearch:9200"
+    ports:
+      - "8081:8082"
+      - "80:8080"
+    volumes:
+      - ./certs:./certs
+    depends_on:
+      - postgresdb
+      - rabbitmq
+      - minio
+      - elasticsearch
+
+  postgresdb:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: "PaperlessDB"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+    ports:
+      - "5434:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+  
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"  # AMQP
+      - "15672:15672"  # Management UI port
+    volumes:
+      - ./config/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf:ro
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "check_port_connectivity"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  ocrworker:
+    build:
+      context: .
+      dockerfile: ./OcrWorker/Dockerfile
+    environment:
+      RABBITMQ_HOST: "rabbitmq"
+      RABBITMQ_PORT: "5672"
+      RABBITMQ_USER: "guest"
+      RABBITMQ_PASSWORD: "guest"
+      TESSDATA_PREFIX: "/app/tessdata"  
+      ELASTICSEARCH_HOST: "http://elasticsearch:9200"  
+      MINIO_ENDPOINT: "127.0.0.1:9000"  
+      MINIO_ACCESS_KEY: "CzXb5FikRyJLMA3HUgH3"
+      MINIO_SECRET_KEY: "HsBiPjb2P0n9KrjvBSYO6zm9OxHX36t2upyTPg9j"
+    volumes:
+      - ./tessdata:/app/tessdata 
+    depends_on:
+      - rabbitmq
+      - minio
+      - elasticsearch
+
+  minio:
+    image: minio/minio
+    environment:
+      MINIO_ROOT_USER: "minioadmin"
+      MINIO_ROOT_PASSWORD: "minioadmin"
+    command: server /data --console-address ":9001"
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio-data:/data
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.9.1
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - es-data:/usr/share/elasticsearch/data
+
+volumes:
+  postgres-data:
+  minio-data:
+  es-data:

@@ -1,19 +1,20 @@
 ﻿FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-
 COPY ["PaperlessREST/PaperlessREST.csproj", "PaperlessREST/"]
-RUN dotnet restore "PaperlessREST/PaperlessREST.csproj"
-
-COPY PaperlessREST/ PaperlessREST/
-COPY PostgreSQL/ PostgreSQL/
-WORKDIR "/src/PaperlessREST"
-RUN dotnet build "PaperlessREST.csproj" -c $BUILD_CONFIGURATION -o /app/build
-RUN dotnet publish "PaperlessREST.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
-
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+COPY ["PaperlessService/PaperlessService.csproj", "PaperlessService/"]
+COPY ["Contract/Contract.csproj", "Contract/"]
+COPY ["Mapper/Mapper.csproj", "Mapper/"]
+COPY ["Agents/Agents.csproj", "Agents/"]
+COPY ["PostgreSQL/PostgreSQL.csproj", "PostgreSQL/"]
+COPY ["Subscriber/Subscriber.csproj", "Subscriber/"]
+COPY ["Publisher/Publisher.csproj", "Publisher/"]
+RUN dotnet restore ./PaperlessREST/PaperlessREST.csproj
+COPY . .
+RUN dotnet publish ./PaperlessREST/PaperlessREST.csproj -c Release -o /app/out
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
-
-COPY --from=build /app/publish .
-
+COPY --from=build /app/out .
+EXPOSE 8081
+EXPOSE 8080
+EXPOSE 80
 ENTRYPOINT ["dotnet", "PaperlessREST.dll"]

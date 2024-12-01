@@ -4,6 +4,360 @@
     "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Tests\\Tests.csproj": {}
   },
   "projects": {
+    "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Agents\\Agents.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Agents\\Agents.csproj",
+        "projectName": "Agents",
+        "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Agents\\Agents.csproj",
+        "packagesPath": "C:\\Users\\anfh2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Agents\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\anfh2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj"
+              },
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Publisher\\Publisher.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Publisher\\Publisher.csproj"
+              },
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Subscriber\\Subscriber.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Subscriber\\Subscriber.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Elasticsearch.Net": {
+              "target": "Package",
+              "version": "[7.17.5, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Minio": {
+              "target": "Package",
+              "version": "[4.0.7, )"
+            },
+            "NEST": {
+              "target": "Package",
+              "version": "[7.17.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Contract\\Contract.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Contract\\Contract.csproj",
+        "projectName": "Contract",
+        "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Contract\\Contract.csproj",
+        "packagesPath": "C:\\Users\\anfh2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Contract\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\anfh2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Mapper\\Mapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Mapper\\Mapper.csproj",
+        "projectName": "Mapper",
+        "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Mapper\\Mapper.csproj",
+        "packagesPath": "C:\\Users\\anfh2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Mapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\anfh2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Contract\\Contract.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Contract\\Contract.csproj"
+              },
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessService\\PaperlessService.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessService\\PaperlessService.csproj"
+              },
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\OcrWorker\\OcrWorker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\OcrWorker\\OcrWorker.csproj",
+        "projectName": "OcrWorker",
+        "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\OcrWorker\\OcrWorker.csproj",
+        "packagesPath": "C:\\Users\\anfh2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\OcrWorker\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\anfh2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Agents\\Agents.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Agents\\Agents.csproj"
+              },
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Contract\\Contract.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Contract\\Contract.csproj"
+              },
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Subscriber\\Subscriber.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Subscriber\\Subscriber.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Magick.NET-Q16-AnyCPU": {
+              "target": "Package",
+              "version": "[14.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Tesseract": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST\\PaperlessREST.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -33,8 +387,26 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Agents\\Agents.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Agents\\Agents.csproj"
+              },
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Contract\\Contract.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Contract\\Contract.csproj"
+              },
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Mapper\\Mapper.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Mapper\\Mapper.csproj"
+              },
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\OcrWorker\\OcrWorker.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\OcrWorker\\OcrWorker.csproj"
+              },
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessService\\PaperlessService.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessService\\PaperlessService.csproj"
+              },
               "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj": {
                 "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj"
+              },
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Subscriber\\Subscriber.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Subscriber\\Subscriber.csproj"
               }
             }
           }
@@ -58,13 +430,25 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "EasyNetQ": {
+              "target": "Package",
+              "version": "[7.8.0, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[11.11.0, )"
             },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -77,6 +461,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.10, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -98,6 +486,117 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessService\\PaperlessService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessService\\PaperlessService.csproj",
+        "projectName": "PaperlessService",
+        "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessService\\PaperlessService.csproj",
+        "packagesPath": "C:\\Users\\anfh2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessService\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\anfh2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Agents\\Agents.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Agents\\Agents.csproj"
+              },
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Contract\\Contract.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Contract\\Contract.csproj"
+              },
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\OcrWorker\\OcrWorker.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\OcrWorker\\OcrWorker.csproj"
+              },
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj"
+              },
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Publisher\\Publisher.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Publisher\\Publisher.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "EasyNetQ": {
+              "target": "Package",
+              "version": "[7.8.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.Logging.Configuration": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -168,9 +667,183 @@
               "target": "Package",
               "version": "[8.0.10, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Publisher\\Publisher.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Publisher\\Publisher.csproj",
+        "projectName": "Publisher",
+        "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Publisher\\Publisher.csproj",
+        "packagesPath": "C:\\Users\\anfh2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Publisher\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\anfh2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "EasyNetQ": {
+              "target": "Package",
+              "version": "[7.8.0, )"
+            },
+            "EasyNetQ.Serialization.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[7.8.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Subscriber\\Subscriber.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Subscriber\\Subscriber.csproj",
+        "projectName": "Subscriber",
+        "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Subscriber\\Subscriber.csproj",
+        "packagesPath": "C:\\Users\\anfh2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Subscriber\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\anfh2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "EasyNetQ": {
+              "target": "Package",
+              "version": "[7.8.0, )"
+            },
+            "EasyNetQ.Serialization.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[7.8.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -224,6 +897,12 @@
             "projectReferences": {
               "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST\\PaperlessREST.csproj": {
                 "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST\\PaperlessREST.csproj"
+              },
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessService\\PaperlessService.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessService\\PaperlessService.csproj"
+              },
+              "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj": {
+                "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj"
               }
             }
           }
@@ -243,6 +922,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.8.0, )"

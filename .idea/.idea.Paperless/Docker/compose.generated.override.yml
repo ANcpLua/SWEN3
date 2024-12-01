@@ -1,4 +1,5 @@
 # This is a generated file. Not intended for manual editing.
+version: "3.8"
 services:
   paperlessrest:
     build:
@@ -15,6 +16,42 @@ services:
     ports: []
     volumes:
     - "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST:/app:rw"
+    - "C:\\Users\\anfh2\\RiderProjects\\SWEN3:/src:rw"
+    - "C:\\Users\\anfh2\\.nuget\\packages:/root/.nuget/packages"
+    working_dir: "/app"
+  publisher:
+    build:
+      context: "C:\\Users\\anfh2\\RiderProjects\\SWEN3"
+      dockerfile: "Publisher/Dockerfile"
+      target: "build"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Publisher.dll"
+    environment:
+      DOTNET_ENVIRONMENT: "Development"
+    image: "publisher:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Publisher:/app:rw"
+    - "C:\\Users\\anfh2\\RiderProjects\\SWEN3:/src:rw"
+    - "C:\\Users\\anfh2\\.nuget\\packages:/root/.nuget/packages"
+    working_dir: "/app"
+  subscriber:
+    build:
+      context: "C:\\Users\\anfh2\\RiderProjects\\SWEN3"
+      dockerfile: "Subscriber/Dockerfile"
+      target: "build"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Subscriber.dll"
+    environment:
+      DOTNET_ENVIRONMENT: "Development"
+    image: "subscriber:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Subscriber:/app:rw"
     - "C:\\Users\\anfh2\\RiderProjects\\SWEN3:/src:rw"
     - "C:\\Users\\anfh2\\.nuget\\packages:/root/.nuget/packages"
     working_dir: "/app"

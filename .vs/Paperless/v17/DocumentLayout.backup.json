@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7F4557F8-5093-433F-99CF-ED5923F1D6D8}|OcrWorker\\OcrWorker.csproj|c:\\users\\anfh2\\riderprojects\\swen3\\ocrworker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F4557F8-5093-433F-99CF-ED5923F1D6D8}|OcrWorker\\OcrWorker.csproj|solutionrelative:ocrworker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F4557F8-5093-433F-99CF-ED5923F1D6D8}|OcrWorker\\OcrWorker.csproj|c:\\users\\anfh2\\riderprojects\\swen3\\ocrworker\\ocrworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F4557F8-5093-433F-99CF-ED5923F1D6D8}|OcrWorker\\OcrWorker.csproj|solutionrelative:ocrworker\\ocrworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F4557F8-5093-433F-99CF-ED5923F1D6D8}|OcrWorker\\OcrWorker.csproj|c:\\users\\anfh2\\riderprojects\\swen3\\ocrworker\\ocrworker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7F4557F8-5093-433F-99CF-ED5923F1D6D8}|OcrWorker\\OcrWorker.csproj|solutionrelative:ocrworker\\ocrworker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62A61754-8D52-49F4-9A82-A7A394BD98F8}|Paperless.ServiceAgents\\Paperless.ServiceAgents.csproj|c:\\users\\anfh2\\riderprojects\\swen3\\paperless.serviceagents\\paperless.serviceagents.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{62A61754-8D52-49F4-9A82-A7A394BD98F8}|Paperless.ServiceAgents\\Paperless.ServiceAgents.csproj|solutionrelative:paperless.serviceagents\\paperless.serviceagents.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\OcrWorker\\Program.cs",
+              "RelativeDocumentMoniker": "OcrWorker\\Program.cs",
+              "ToolTip": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\OcrWorker\\Program.cs",
+              "RelativeToolTip": "OcrWorker\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwC0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T02:14:08.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OcrWorker.cs",
+              "DocumentMoniker": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\OcrWorker\\OcrWorker.cs",
+              "RelativeDocumentMoniker": "OcrWorker\\OcrWorker.cs",
+              "ToolTip": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\OcrWorker\\OcrWorker.cs",
+              "RelativeToolTip": "OcrWorker\\OcrWorker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T02:14:04.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OcrWorker",
+              "DocumentMoniker": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\OcrWorker\\OcrWorker.csproj",
+              "RelativeDocumentMoniker": "OcrWorker\\OcrWorker.csproj",
+              "ToolTip": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\OcrWorker\\OcrWorker.csproj",
+              "RelativeToolTip": "OcrWorker\\OcrWorker.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-01T02:13:57.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Paperless.ServiceAgents",
+              "DocumentMoniker": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Paperless.ServiceAgents\\Paperless.ServiceAgents.csproj",
+              "RelativeDocumentMoniker": "Paperless.ServiceAgents\\Paperless.ServiceAgents.csproj",
+              "ToolTip": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Paperless.ServiceAgents\\Paperless.ServiceAgents.csproj",
+              "RelativeToolTip": "Paperless.ServiceAgents\\Paperless.ServiceAgents.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-01T02:13:52.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

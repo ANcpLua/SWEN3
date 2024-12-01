@@ -4,18 +4,19 @@
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://+:8080;https://+:8081"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "https://localhost:8081/index.html"
+      "applicationUrl": "https://localhost:8081/swagger/index.html"
     },
     "WSL": {
       "commandName": "WSL2",
       "launchBrowser": true,
-      "launchUrl": "https://localhost:8081/index.html",
+      "launchUrl": "https://localhost:8081/swagger/index.html",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "ASPNETCORE_URLS": "https://localhost:8081/index.html"
+        "ASPNETCORE_URLS": "http://+:8080;https://+:8081"
       },
       "distributionName": ""
     }
