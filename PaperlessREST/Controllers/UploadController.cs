@@ -1,7 +1,7 @@
+using Contract.DTOModels;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
-using PaperlessREST.Models;
-using PaperlessREST.Services;
+using PaperlessService.InterfacesBL;
 
 namespace PaperlessREST.Controllers;
 
@@ -36,9 +36,18 @@ public class UploadController : ControllerBase
                 return BadRequest(validationResult.Errors);
             }
 
+            if (uploadDto.File.Length == 0)
+            {
+                return BadRequest("File is required.");
+            }
+
+            if (string.IsNullOrWhiteSpace(uploadDto.Title))
+            {
+                return BadRequest("Document title is required.");
+            }
+
             var document = await _uploadService.Upload(uploadDto, cancellationToken);
-            return CreatedAtAction(nameof(DocumentsController.GetById), "Documents", new { id = document.Id },
-                document);
+            return CreatedAtAction(nameof(GetDocumentController.GetById), "GetDocument", new { id = document.Id }, document);
         }
         catch (OperationCanceledException)
         {

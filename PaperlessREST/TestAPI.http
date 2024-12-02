@@ -1,0 +1,46 @@
+@baseUrl = https://localhost:8081/api
+@documentId = 1
+
+@documentTitle = Test Document
+@contentType = application/json
+
+### Test Setup - Environment Configuration
+GET {{baseUrl}}/health
+Accept: application/json
+
+### GET Single Document
+GET {{baseUrl}}/documents/{{documentId}}
+Accept: {{contentType}}
+
+### Upload Document
+POST {{baseUrl}}/documents/upload
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="title"
+
+{{documentTitle}}
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="test.txt"
+Content-Type: text/plain
+
+This is a test document.
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### Store the uploaded document ID
+@response = variable value
+@uploadedDocumentId = {{response.body.id}}
+
+### Verify Deletion
+GET {{baseUrl}}/documents/{{uploadedDocumentId}}
+Accept: {{contentType}}
+
+
+DELETE {{baseUrl}}/documents/999999
+
+### Content Type Validation
+GET {{baseUrl}}/documents/{{documentId}}
+Accept: application/xml
+
+### Test Cleanup
+# @name cleanup

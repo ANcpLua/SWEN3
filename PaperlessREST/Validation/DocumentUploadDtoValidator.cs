@@ -1,5 +1,5 @@
+using Contract.DTOModels;
 using FluentValidation;
-using PaperlessREST.Models;
 
 namespace PaperlessREST.Validation;
 

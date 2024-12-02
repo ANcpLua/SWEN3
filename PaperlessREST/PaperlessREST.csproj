@@ -10,8 +10,10 @@
 
     <ItemGroup>
         <PackageReference Include="AutoMapper" Version="13.0.1" />
+        <PackageReference Include="EasyNetQ" Version="7.8.0" />
         <PackageReference Include="FluentValidation" Version="11.11.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.11" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -20,21 +22,34 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\Contract\Contract.csproj" />
+        <ProjectReference Include="..\Mapper\Mapper.csproj" />
+        <ProjectReference Include="..\Messages\Messages.csproj" />
+        <ProjectReference Include="..\PaperlessService\PaperlessService.csproj" />
         <ProjectReference Include="..\PostgreSQL\PostgreSQL.csproj" />
     </ItemGroup>
 
     <ItemGroup>
         <None Include="wwwroot\favicon.ico" />
+        <None Include="wwwroot\Web.config">
+          <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+          <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </None>
     </ItemGroup>
 
     <ItemGroup>
       <Content Include="..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\uploads\fbb417ce-8553-4623-9294-372c17987448_HelloWorld.pdf" />
     </ItemGroup>
     
 </Project>
