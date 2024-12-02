@@ -1,0 +1,12 @@
+C:\Users\jasmi\source\repos\SWEN3\SWEN3\Agents\bin\Debug\net8.0\Agents.deps.json
+C:\Users\jasmi\source\repos\SWEN3\SWEN3\Agents\bin\Debug\net8.0\Agents.dll
+C:\Users\jasmi\source\repos\SWEN3\SWEN3\Agents\bin\Debug\net8.0\Agents.pdb
+C:\Users\jasmi\source\repos\SWEN3\SWEN3\Agents\obj\Debug\net8.0\Agents.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jasmi\source\repos\SWEN3\SWEN3\Agents\obj\Debug\net8.0\Agents.AssemblyInfoInputs.cache
+C:\Users\jasmi\source\repos\SWEN3\SWEN3\Agents\obj\Debug\net8.0\Agents.AssemblyInfo.cs
+C:\Users\jasmi\source\repos\SWEN3\SWEN3\Agents\obj\Debug\net8.0\Agents.csproj.CoreCompileInputs.cache
+C:\Users\jasmi\source\repos\SWEN3\SWEN3\Agents\obj\Debug\net8.0\Agents.dll
+C:\Users\jasmi\source\repos\SWEN3\SWEN3\Agents\obj\Debug\net8.0\refint\Agents.dll
+C:\Users\jasmi\source\repos\SWEN3\SWEN3\Agents\obj\Debug\net8.0\Agents.pdb
+C:\Users\jasmi\source\repos\SWEN3\SWEN3\Agents\obj\Debug\net8.0\ref\Agents.dll
+C:\Users\jasmi\source\repos\SWEN3\SWEN3\Agents\obj\Debug\net8.0\Agents.sourcelink.json
