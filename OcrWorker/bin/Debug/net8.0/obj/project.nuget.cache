@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "JPIO9d4VK9M=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jasmi\\source\\repos\\SWEN3\\SWEN3\\OcrWorker\\OcrWorker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jasmi\\.nuget\\packages\\magick.net-q16-anycpu\\14.2.0\\magick.net-q16-anycpu.14.2.0.nupkg.sha512",
+    "C:\\Users\\jasmi\\.nuget\\packages\\magick.net.core\\14.2.0\\magick.net.core.14.2.0.nupkg.sha512",
+    "C:\\Users\\jasmi\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\jasmi\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\jasmi\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\jasmi\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\jasmi\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
+    "C:\\Users\\jasmi\\.nuget\\packages\\tesseract\\5.2.0\\tesseract.5.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
