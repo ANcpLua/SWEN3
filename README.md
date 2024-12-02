@@ -4,6 +4,8 @@
 <h3 align="center">A document management system with features including archiving, OCR processing, tagging, and full-text search.
 <p></p>
 
+![image](https://github.com/user-attachments/assets/854a3561-eada-4c83-b0d9-d20d22ea36da)
+
 ## Sprint Overview and Technologies
   
 ### Sprint 1: REST Service API
