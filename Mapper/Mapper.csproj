@@ -6,4 +6,13 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="13.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\PaperlessService\PaperlessService.csproj" />
+      <ProjectReference Include="..\PostgreSQL\PostgreSQL.csproj" />
+    </ItemGroup>
+
 </Project>

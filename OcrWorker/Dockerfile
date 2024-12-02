@@ -1,21 +1,18 @@
-﻿FROM mcr.microsoft.com/dotnet/runtime:8.0 AS base
-USER $APP_UID
-WORKDIR /app
-
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-ARG BUILD_CONFIGURATION=Release
+﻿FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 COPY ["OcrWorker/OcrWorker.csproj", "OcrWorker/"]
+COPY ["Subscriber/Subscriber.csproj", "Subscriber/"]
+COPY ["Agents/Agents.csproj", "Agents/"]
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /src
+COPY ["OcrWorker/OcrWorker.csproj", "OcrWorker/"]
+COPY ["Contract/Contract.csproj", "Contract/"]
 RUN dotnet restore "OcrWorker/OcrWorker.csproj"
 COPY . .
 WORKDIR "/src/OcrWorker"
-RUN dotnet build "OcrWorker.csproj" -c $BUILD_CONFIGURATION -o /app/build
-
-FROM build AS publish
-ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "OcrWorker.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
-
-FROM base AS final
+RUN dotnet publish -c Release -o /app/publish
+FROM mcr.microsoft.com/dotnet/runtime:8.0
 WORKDIR /app
-COPY --from=publish /app/publish .
+RUN mkdir -p /app/tessdata
+COPY --from=build /app/publish .
 ENTRYPOINT ["dotnet", "OcrWorker.dll"]

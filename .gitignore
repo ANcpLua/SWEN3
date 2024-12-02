@@ -1,0 +1,28 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+.vs/
+
+# Visual Studio files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+.vscode/
+
+# Rider files
+.idea/
+
+# Build files
+*.dll
+*.pdb
+*.exe
+*.cache
+
+# Temporary files
+*.log
+*.vsidx

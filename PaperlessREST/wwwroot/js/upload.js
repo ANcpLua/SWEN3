@@ -14,16 +14,14 @@ document.getElementById('uploadForm').addEventListener('submit', async function(
             body: formData
         });
 
-        if (!response.ok) {
-            throw new Error('Upload failed');
-        }
-
         const result = await response.json();
-        showAlert('Document uploaded successfully', 'success');
+        showAlert('Document uploaded successfully');
 
+        // Reset form
         titleInput.value = '';
         fileInput.value = '';
 
+        // Redirect to documents page after short delay
         setTimeout(() => {
             window.location.href = '/documents.html';
         }, 2000);
@@ -33,14 +31,7 @@ document.getElementById('uploadForm').addEventListener('submit', async function(
 });
 
 function showAlert(message, type = 'success') {
-    const toasty = document.getElementById('toasty');
-    const toastyMessage = document.getElementById('toastyMessage');
-    const toastyTitle = document.getElementById('toastyTitle');
-
-    toastyTitle.textContent = type === 'success' ? 'Success' : 'Error';
-    toastyMessage.textContent = message;
-
-    toasty.className = `toast align-items-center text-bg-${type} border-0`;
-    const toast = new bootstrap.Toast(toasty);
-    toast.show();
+    const messageDiv = document.getElementById('message');
+    messageDiv.className = `alert alert-${type}`;
+    messageDiv.textContent = message;
 }

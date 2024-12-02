@@ -1,11 +1,11 @@
 using FluentValidation;
 using PaperlessService.Entities;
 
-namespace PaperlessREST.Validation;
+namespace PaperlessService.Validation;
 
-public class DocumentValidator : AbstractValidator<BlDocument>
+public class BlValidation : AbstractValidator<BlDocument>
 {
-    public DocumentValidator()
+    public BlValidation()
     {
         RuleFor(x => x.Name)
             .NotEmpty()
