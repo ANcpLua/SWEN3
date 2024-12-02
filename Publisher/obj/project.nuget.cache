@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "TcCSEj85MPI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jasmi\\source\\repos\\SWEN3\\SWEN3\\Publisher\\Publisher.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jasmi\\.nuget\\packages\\easynetq\\7.8.0\\easynetq.7.8.0.nupkg.sha512",
+    "C:\\Users\\jasmi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\jasmi\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
+    "C:\\Users\\jasmi\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\jasmi\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
