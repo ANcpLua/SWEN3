@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj": {}
+    "C:\\Users\\jasmi\\source\\repos\\SWEN3\\SWEN3\\PostgreSQL\\PostgreSQL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj": {
+    "C:\\Users\\jasmi\\source\\repos\\SWEN3\\SWEN3\\PostgreSQL\\PostgreSQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj",
+        "projectUniqueName": "C:\\Users\\jasmi\\source\\repos\\SWEN3\\SWEN3\\PostgreSQL\\PostgreSQL.csproj",
         "projectName": "PostgreSQL",
-        "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\PostgreSQL.csproj",
-        "packagesPath": "C:\\Users\\anfh2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PostgreSQL\\obj\\",
+        "projectPath": "C:\\Users\\jasmi\\source\\repos\\SWEN3\\SWEN3\\PostgreSQL\\PostgreSQL.csproj",
+        "packagesPath": "C:\\Users\\jasmi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jasmi\\source\\repos\\SWEN3\\SWEN3\\PostgreSQL\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\anfh2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jasmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,6 +49,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.10, )"
@@ -65,6 +68,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.10, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
@@ -87,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

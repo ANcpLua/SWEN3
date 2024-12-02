@@ -8,12 +8,11 @@ namespace PostgreSQL.Module
 {
     public static class ServiceCollectionExtensions
     {
-        public static IServiceCollection AddPostgreSqlServices(this IServiceCollection services, IConfiguration configuration)
+        public static void AddPostgreSqlServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<PaperlessDbContext>(options =>
                 options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<IDocumentRepository, DocumentRepository>();
-            return services;
         }
     }
 }
