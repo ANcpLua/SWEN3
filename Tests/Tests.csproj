@@ -23,7 +23,9 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Mapper\Mapper.csproj" />
       <ProjectReference Include="..\PaperlessREST\PaperlessREST.csproj" />
+      <ProjectReference Include="..\PostgreSQL\PostgreSQL.csproj" />
     </ItemGroup>
 
 </Project>
