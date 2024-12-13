@@ -11,3 +11,16 @@ C:\Users\anfh2\RiderProjects\SWEN3\Contract\obj\Debug\net8.0\Contract.dll
 C:\Users\anfh2\RiderProjects\SWEN3\Contract\obj\Debug\net8.0\refint\Contract.dll
 C:\Users\anfh2\RiderProjects\SWEN3\Contract\obj\Debug\net8.0\Contract.pdb
 C:\Users\anfh2\RiderProjects\SWEN3\Contract\obj\Debug\net8.0\ref\Contract.dll
+C:\Users\Alexander\RiderProjects\SWEN3\Contract\bin\Debug\net8.0\Contract.deps.json
+C:\Users\Alexander\RiderProjects\SWEN3\Contract\bin\Debug\net8.0\Contract.dll
+C:\Users\Alexander\RiderProjects\SWEN3\Contract\bin\Debug\net8.0\Contract.pdb
+C:\Users\Alexander\RiderProjects\SWEN3\Contract\obj\Debug\net8.0\Contract.csproj.AssemblyReference.cache
+C:\Users\Alexander\RiderProjects\SWEN3\Contract\obj\Debug\net8.0\Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alexander\RiderProjects\SWEN3\Contract\obj\Debug\net8.0\Contract.AssemblyInfoInputs.cache
+C:\Users\Alexander\RiderProjects\SWEN3\Contract\obj\Debug\net8.0\Contract.AssemblyInfo.cs
+C:\Users\Alexander\RiderProjects\SWEN3\Contract\obj\Debug\net8.0\Contract.csproj.CoreCompileInputs.cache
+C:\Users\Alexander\RiderProjects\SWEN3\Contract\obj\Debug\net8.0\Contract.sourcelink.json
+C:\Users\Alexander\RiderProjects\SWEN3\Contract\obj\Debug\net8.0\Contract.dll
+C:\Users\Alexander\RiderProjects\SWEN3\Contract\obj\Debug\net8.0\refint\Contract.dll
+C:\Users\Alexander\RiderProjects\SWEN3\Contract\obj\Debug\net8.0\Contract.pdb
+C:\Users\Alexander\RiderProjects\SWEN3\Contract\obj\Debug\net8.0\ref\Contract.dll

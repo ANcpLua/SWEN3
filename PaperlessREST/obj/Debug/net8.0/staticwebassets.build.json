@@ -1,20 +1,20 @@
 {
   "Version": 1,
-  "Hash": "f7EVXqroeH4DHiBj2XRcJTPOI/F7q7FIs1E+EFAVSO4=",
+  "Hash": "SKwQCA9NI35IdeXZQ4dJEX9fPzv+qB0pC0mgCu1ApQQ=",
   "Source": "PaperlessREST",
   "BasePath": "_content/PaperlessREST",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessServices\\PaperlessServices.csproj",
+      "Identity": "C:\\Users\\Alexander\\RiderProjects\\SWEN3\\PaperlessServices\\PaperlessServices.csproj",
       "Version": 2,
       "Source": "PaperlessServices",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],
@@ -22,17 +22,17 @@
     {
       "Name": "PaperlessREST\\wwwroot",
       "Source": "PaperlessREST",
-      "ContentRoot": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alexander\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\",
       "BasePath": "_content/PaperlessREST",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\css\\index.css",
+      "Identity": "C:\\Users\\Alexander\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\css\\index.css",
       "SourceId": "PaperlessREST",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alexander\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\",
       "BasePath": "_content/PaperlessREST",
       "RelativePath": "css/index.css",
       "AssetKind": "All",
@@ -48,10 +48,10 @@
       "OriginalItemSpec": "wwwroot\\css\\index.css"
     },
     {
-      "Identity": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\documents.html",
+      "Identity": "C:\\Users\\Alexander\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\documents.html",
       "SourceId": "PaperlessREST",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alexander\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\",
       "BasePath": "_content/PaperlessREST",
       "RelativePath": "documents.html",
       "AssetKind": "All",
@@ -67,10 +67,10 @@
       "OriginalItemSpec": "wwwroot\\documents.html"
     },
     {
-      "Identity": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Alexander\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\favicon.ico",
       "SourceId": "PaperlessREST",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alexander\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\",
       "BasePath": "_content/PaperlessREST",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -86,10 +86,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\Alexander\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\index.html",
       "SourceId": "PaperlessREST",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alexander\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\",
       "BasePath": "_content/PaperlessREST",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -105,10 +105,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\js\\main.js",
+      "Identity": "C:\\Users\\Alexander\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\js\\main.js",
       "SourceId": "PaperlessREST",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alexander\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\",
       "BasePath": "_content/PaperlessREST",
       "RelativePath": "js/main.js",
       "AssetKind": "All",
@@ -124,10 +124,10 @@
       "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
-      "Identity": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\upload.html",
+      "Identity": "C:\\Users\\Alexander\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\upload.html",
       "SourceId": "PaperlessREST",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alexander\\RiderProjects\\SWEN3\\PaperlessREST\\wwwroot\\",
       "BasePath": "_content/PaperlessREST",
       "RelativePath": "upload.html",
       "AssetKind": "All",

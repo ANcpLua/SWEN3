@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Contract\\Contract.csproj": {}
+    "C:\\Users\\Alexander\\RiderProjects\\SWEN3\\Contract\\Contract.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Contract\\Contract.csproj": {
+    "C:\\Users\\Alexander\\RiderProjects\\SWEN3\\Contract\\Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Contract\\Contract.csproj",
+        "projectUniqueName": "C:\\Users\\Alexander\\RiderProjects\\SWEN3\\Contract\\Contract.csproj",
         "projectName": "Contract",
-        "projectPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Contract\\Contract.csproj",
-        "packagesPath": "C:\\Users\\anfh2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anfh2\\RiderProjects\\SWEN3\\Contract\\obj\\",
+        "projectPath": "C:\\Users\\Alexander\\RiderProjects\\SWEN3\\Contract\\Contract.csproj",
+        "packagesPath": "C:\\Users\\Alexander\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexander\\RiderProjects\\SWEN3\\Contract\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\anfh2\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Alexander\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

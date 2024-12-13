@@ -96,9 +96,9 @@ public class DocumentWorkflowTests
         receivedMessage?.Text.Should().Contain("Hello World", "The OCR text should contain the known text from the PDF");
 
         // Optionally, we can verify the REST endpoint that gets the document, ensuring OCR text is now stored
-        var getResponse = await _client.GetAsync($"/documents/{_uploadedDocumentId}");
+        var getResponse = await _client.GetAsync($"/documents/{_uploadedDocumentId}", cts.Token);
         getResponse.IsSuccessStatusCode.Should().BeTrue("Should be able to retrieve the document after OCR processing");
-        var getJson = await getResponse.Content.ReadAsStringAsync();
+        var getJson = await getResponse.Content.ReadAsStringAsync(cts.Token);
         dynamic getDocData = JsonConvert.DeserializeObject(getJson)!;
         string ocrText = getDocData.ocrText;
         ocrText.Should().Contain("Hello World", "The database should be updated with the OCR text");
